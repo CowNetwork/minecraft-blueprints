@@ -1,0 +1,7 @@
+kafka:
+  brokers:
+    - mars-kafka-kafka-0.mars-kafka-kafka-brokers.kafka.svc.cluster.local:9092
+    - mars-kafka-kafka-1.mars-kafka-kafka-brokers.kafka.svc.cluster.local:9092
+    - mars-kafka-kafka-2.mars-kafka-kafka-brokers.kafka.svc.cluster.local:9092
+  topics:
+    - cow.global.indigo
