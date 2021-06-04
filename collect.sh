@@ -23,7 +23,9 @@ for plugin in $(cat $1 | jq .plugins[] -r); do
   curl -JO $plugin
 done
 
-cd $(cat $1 | jq .name -r)/maps # plugin folder
+name=$(cat $1 | jq .name -r) # plugin folder
+mkdir -p $name/maps
+cd $name/maps # plugin folder
 
 for obj in $(cat $1 | jq -c .maps[]); do
   map=$(echo "$obj" | jq .name -r)
