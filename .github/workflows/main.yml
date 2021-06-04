@@ -13,8 +13,8 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
-          AWS_S3_BUCKET: ${{ env.S3_BUCKET }}
-          AWS_API_ENDPOINT: ${{ env.S3_ENDPOINT }}
+          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          AWS_API_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
     steps:
       - uses: actions/checkout@v2
       - name: Add cdn.cow.network to /etc/hosts
