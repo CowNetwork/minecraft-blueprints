@@ -1,0 +1,20 @@
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      s3proxy:
+        image: pottava/s3-proxy
+        ports:
+          - 80:80
+    steps:
+      - uses: actions/checkout@v2
+      - name: Add cdn.cow.network to /etc/hosts
+        run: sudo echo "127.0.0.1 cdn.cow.network" >> /etc/hosts
+      - name: Run build script
+        run: ./build.sh
+        
+
