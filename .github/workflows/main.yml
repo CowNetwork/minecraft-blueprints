@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     services:
-      s3proxy:
+      s3proxy: # yeah, this is pretty ghetto, but we can save costs, if we don't acutally deploy this.
         image: pottava/s3-proxy
         ports:
           - 80:80
