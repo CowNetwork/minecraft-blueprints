@@ -16,7 +16,7 @@ function build() {
   docker push $tag
 }
 
-docker login ghcr.io -u $DOCKER_REPO_USER -p $DOCER_REPO_PASS
+docker login ghcr.io -u $DOCKER_REG_USER -p $DOCER_REG_PASS
 
 build base
 

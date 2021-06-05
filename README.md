@@ -3,6 +3,7 @@ Minecraft blueprints
 
 This repository contains all blueprints for our servers.
 
-TODO: 
-  * download maps using some s3 proxy (https://hub.docker.com/r/pottava/s3-proxy/)
-
+Note the following:
+* Environment variables that need to be set:
+  * `DOCKER_REG_USER`: Registry user
+  * `DOCKER_REG_PASS`: Password for registry user

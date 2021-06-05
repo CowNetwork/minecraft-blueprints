@@ -5,6 +5,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env: 
+      DOCKER_REG_USER: ${{ github.repository_owner }}
+      DOCKER_REG_PASS: ${{ secrets.GHCR_TOKEN }}
     services:
       s3proxy: # yeah, this is pretty ghetto, but we can save costs, if we don't acutally deploy this.
         image: pottava/s3-proxy
