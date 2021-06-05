@@ -1,5 +1,6 @@
 {
-  "version": "0.21.1",
+  "version": "v0.21.1",
+  "name": "spigot-base",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/cloudevents/cloudevents-spigot/1.0.0/cloudevents-spigot-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/grape/grape-spigot/0.3.0/grape-spigot-0.3.0.jar",
