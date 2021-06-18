@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Add cdn.cow.network to /etc/hosts
-        run: sudo echo "127.0.0.1 cdn.cow.network" >> /etc/hosts
+        run: sudo echo "127.0.0.1 cdn.cow.network" | sudo tee -a /etc/hosts
       - uses: hashicorp-contrib/setup-packer@v1
       - name: Run build script
         run: ./scripts/build.sh
