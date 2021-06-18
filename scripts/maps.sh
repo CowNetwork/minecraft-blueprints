@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir -p $BUILD_BLUEPRINT_NAME/maps
-cd $BUILD_BLUEPRINT_NAME/maps # plugin folder
+mkdir -p plugins/$BUILD_BLUEPRINT_NAME/maps
+cd plugins/$BUILD_BLUEPRINT_NAME/maps # plugin folder
 
 for obj in $(echo "$BUILD_MAPS" | jq -c .[]); do
   map=$(echo "$obj" | jq .name -r)
@@ -15,7 +15,7 @@ wait # wait for em to finish
 count=$(find . -maxdepth 1 -type f -name "*.tar.gz" -printf x | wc -c)
 
 if [ $count -gt 0 ]; then
-  for archive in ./*.tar.gz; do
+  for archive in *.tar.gz; do
     echo "$archive"
     tar -xzvf $archive
   done
