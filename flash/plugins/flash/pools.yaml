@@ -1,5 +1,0 @@
-pools:
-  - key: maps
-    kind: network.cow.minigame.noma.spigot.pool.WorldPool
-    location: /opt/spigot/plugins/flash/maps
-

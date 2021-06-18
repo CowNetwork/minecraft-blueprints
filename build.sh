@@ -7,16 +7,23 @@ function build() {
   tag=ghcr.io/cownetwork/$name:$version
   exists=$(docker manifest inspect $tag > /dev/null ; echo $?)
 
-  if [ $exists == 0 ]; then   
-    echo "$tag already exists. skipping."
-    return
+  #if [ $exists == 0 ]; then   
+    #echo "$tag already exists. skipping."
+    #return
+  #fi
+
+  cp collect.sh $1/collect.sh
+  
+
+  if [ "$1" != "base" ]; then
+    cp Dockerfile.base $1/Dockerfile
   fi
-    
-  docker build -t $tag -f $1/Dockerfile $1
-  docker push $tag
+
+  docker build --no-cache --progress=plain -t $tag -f $1/Dockerfile $1/
+  #docker push $tag
 }
 
-docker login ghcr.io -u $DOCKER_REG_USER -p $DOCER_REG_PASS
+docker login ghcr.io -u $DOCKER_REG_USER -p $DOCKER_REG_PASS
 
 build base
 
