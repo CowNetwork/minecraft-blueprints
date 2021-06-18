@@ -1,13 +1,11 @@
-on:
-  push:
-    tags:
-      - '*'
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     env: 
       DOCKER_REG_USER: ${{ github.repository_owner }}
       DOCKER_REG_PASS: ${{ secrets.GHCR_TOKEN }}
+      DOCKER_REG_SERVER: ghcr.io
     services:
       s3proxy: # yeah, this is pretty ghetto, but we can save costs, if we don't acutally deploy this.
         image: pottava/s3-proxy
@@ -22,7 +20,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Add cdn.cow.network to /etc/hosts
         run: sudo echo "127.0.0.1 cdn.cow.network" >> /etc/hosts
+      - uses: hashicorp-contrib/setup-packer@v1
       - name: Run build script
-        run: ./build.sh
+        run: ./scripts/build.sh
         
 
