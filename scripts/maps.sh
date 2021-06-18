@@ -1,11 +1,5 @@
 #!/bin/bash
 
-
-
-echo "$BUILD_MAPS"
-
-exit 0
-
 mkdir -p $BUILD_BLUEPRINT_NAME/maps
 cd $BUILD_BLUEPRINT_NAME/maps # plugin folder
 
@@ -27,9 +21,6 @@ if [ $count -gt 0 ]; then
   done
   rm *.tar.gz
 fi
-
-
-ls -la
 
 echo "move spawn to root dir"
 if [ -d "spawn" ]; then
