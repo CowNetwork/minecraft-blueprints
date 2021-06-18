@@ -6,7 +6,7 @@
     "https://maven.cow.network/releases/network/cow/mc/cowshed/1.0.0/cowshed-1.0.0.jar"
   ],
   "maps": [
-    { "name": "spawn", "url": "http://cdn.cow.network/lobby/v1.tar.gz" }
+    { "name": "spawn", "url": "http://cdn.cow.network/maps/lobby/v1.tar.gz" }
   ]
 }
 
