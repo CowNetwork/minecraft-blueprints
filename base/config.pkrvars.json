@@ -1,4 +1,5 @@
 {
+  "tuinity-version": "1.16.5-b12d0cce",
   "version": "v0.24.4",
   "name": "spigot-base",
   "plugins": [
