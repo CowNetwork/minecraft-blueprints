@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 mkdir -p plugins/$BUILD_BLUEPRINT_NAME/maps
 cd plugins/$BUILD_BLUEPRINT_NAME/maps # plugin folder
