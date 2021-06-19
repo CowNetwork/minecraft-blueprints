@@ -30,6 +30,6 @@ jobs:
         run: "docker run --rm -d -e AWS_ACCESS_KEY_ID=${{ secrets.S3_ACCESS_KEY }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.S3_SECRET_KEY }} -e AWS_S3_BUCKET=${{ secrets.S3_BUCKET }} -e AWS_API_ENDPOINT=${{ secrets.S3_ENDPOINT }} -p 80:80 pottava/s3-proxy"
       - name: Run build script
         run: ./scripts/build.sh
-      - name: docker run ghcr.io/cownetwork/lobby:v0.21.4
+      - run: docker run ghcr.io/cownetwork/lobby:v0.21.4
         
 
