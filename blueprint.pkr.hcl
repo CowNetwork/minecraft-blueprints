@@ -64,7 +64,7 @@ build {
     post-processor "shell-local" {
       inline = [
         "docker login ghcr.io -u ${var.docker-reg-user} -p ${var.docker-reg-pass}",
-	"docker push ghcr.io ghcr.io/cownetwork/{var.name}:${var.version}",
+	"docker push ghcr.io/cownetwork/{var.name}:${var.version}",
 	"docker logout ghcr.io"
       ]
     }
