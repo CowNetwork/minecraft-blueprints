@@ -67,6 +67,7 @@ build {
       login_password = "${var.docker-reg-pass}"
       login_server = "${var.docker-reg-server}"
       login = true
+      ecr_login = true
     }
   }
 }
