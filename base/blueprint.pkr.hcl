@@ -63,9 +63,9 @@ build {
     }
     
     post-processor "docker-push" {
-      login_username = env("DOCKER_REG_USER")
-      login_password = env("DOCKER_REG_PASS")
-      login_server = env("DOCKER_REG_SERVER")
+      login_username = "${var.docker-reg-user}"
+      login_password = "${var.docker-reg-pass}"
+      login_server = "${var.docker-reg-server}"
       login = true
     }
   }

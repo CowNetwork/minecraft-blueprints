@@ -8,6 +8,24 @@ packer {
 }
 
 
+variable "docker-reg-user" {
+  type = string
+  default = env("DOCKER_REG_USER")
+}
+
+
+variable "docker-reg-pass" {
+  type = string
+  default = env("DOCKER_REG_pass")
+}
+
+
+variable "docker-reg-server" {
+  type = string
+  default = env("DOCKER_REG_SERVER")
+}
+
+
 variable "tuinity-version" {
   type = string
   default = env("BUILD_TUINITY_VERSION")
