@@ -64,7 +64,7 @@ build {
     post-processor "docker-push" {
       login_username = "${var.docker-reg-user}"
       login_password = "${var.docker-reg-pass}"
-      login_server = "${var.docker-reg-server}"
+      login_server = "ghcr.io"
       login = true
     }
   }
