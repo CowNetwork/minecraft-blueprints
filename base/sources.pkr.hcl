@@ -15,7 +15,7 @@ variable "docker-reg-user" {
 
 variable "docker-reg-pass" {
   type = string
-  default = env("DOCKER_REG_pass")
+  default = env("DOCKER_REG_PASS")
 }
 
 variable "tuinity-version" {
