@@ -20,12 +20,6 @@ variable "docker-reg-pass" {
   default = env("DOCKER_REG_pass")
 }
 
-
-variable "docker-reg-server" {
-  type = string
-  default = env("DOCKER_REG_SERVER")
-}
-
 variable "spigot-base-version" {
   type = string
   default = env("BUILD_SPIGOT_BASE_VERSION")

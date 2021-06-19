@@ -61,11 +61,12 @@ build {
       tags = ["${var.version}"]
     }
     
-    post-processor "docker-push" {
-      login_username = "${var.docker-reg-user}"
-      login_password = "${var.docker-reg-pass}" 
-      login_server = "${var.docker-reg-server}"
-      login = true
+    post-processor "shell-local" {
+      inline = [
+        "docker login ghcr.io -u ${var.docker-reg-user} -p ${var.docker-reg-pass}",
+	"docker push ghcr.io ghcr.io/cownetwork/{var.name}:${var.version}",
+	"docker logout ghcr.io"
+      ]
     }
   }
 }
