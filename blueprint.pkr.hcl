@@ -60,12 +60,12 @@ build {
       repository = "ghcr.io/cownetwork/${var.name}"
       tags = ["${var.version}"]
     }
-    /*
+    
     post-processor "docker-push" {
       login_username = env("DOCKER_REG_USER")
       login_password = env("DOCKER_REG_PASS")
       login_server = env("DOCKER_REG_SERVER")
       login = true
-    }*/
+    }
   }
 }
