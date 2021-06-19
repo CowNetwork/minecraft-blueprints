@@ -20,7 +20,7 @@ variable "version" {
 
 build {
   sources = [
-    "source.docker.spigot-base"
+    "source.docker.tuinity"
   ]
 
   provisioner "shell-local" {
