@@ -1,6 +1,6 @@
 {
   "tuinity-version": "1.16.5-b12d0cce",
-  "version": "v0.24.5",
+  "version": "v0.24.6",
   "name": "spigot-base",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/cloudevents/cloudevents-spigot/1.0.0/cloudevents-spigot-1.0.0.jar",
