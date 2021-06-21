@@ -1,6 +1,6 @@
 {
   "tuinity-version": "1.16.5-b12d0cce",
-  "version": "v0.24.6",
+  "version": "v0.25.1",
   "name": "spigot-base",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/cloudevents/cloudevents-spigot/1.0.0/cloudevents-spigot-1.0.0.jar",
@@ -10,6 +10,7 @@
     "https://maven.cow.network/releases/network/cow/protocol-wrappers/0.3.0+1.16.5-R0.1-SNAPSHOT/protocol-wrappers-0.3.0+1.16.5-R0.1-20210402.154734-1.jar",
     "https://maven.cow.network/releases/network/cow/spigot/spigot-extensions/1.0.0/spigot-extensions-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/mc/cowboards/0.2.0/cowboards-0.2.0.jar",
-    "https://maven.cow.network/releases/network/cow/mc/kotlin-spigot/1.0.0/kotlin-spigot-1.0.0.jar"
+    "https://maven.cow.network/releases/network/cow/mc/kotlin-spigot/1.0.0/kotlin-spigot-1.0.0.jar",
+    "https://maven.cow.network/releases/com/comphenix/protocol/ProtocolLib/4.6.0/ProtocolLib-4.6.0.jar"
   ]
 }
