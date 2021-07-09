@@ -11,6 +11,7 @@
     "https://maven.cow.network/releases/network/cow/spigot/spigot-extensions/1.0.0/spigot-extensions-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/mc/cowboards/0.2.0/cowboards-0.2.0.jar",
     "https://maven.cow.network/releases/network/cow/mc/kotlin-spigot/1.0.0/kotlin-spigot-1.0.0.jar",
-    "https://maven.cow.network/releases/com/comphenix/protocol/ProtocolLib/4.6.0/ProtocolLib-4.6.0.jar"
+    "https://maven.cow.network/releases/com/comphenix/protocol/ProtocolLib/4.6.0/ProtocolLib-4.6.0.jar",
+    "https://maven.cow.network/releases/network/cow/spigot/inventory-dsl/1.0.0/inventory-dsl-1.0.0.jar"
   ]
 }
