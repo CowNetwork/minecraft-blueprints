@@ -33,9 +33,4 @@ phases:
       onStart: false
     phaseEndCountdown:
       duration: 30
-    duration: 0hases:
-  - key: lobby
-    kind: noma/spigot/phases/LobbyVotePhase
-    voteables:
-      - pool: topics
-        options: 5
+    duration: 0
