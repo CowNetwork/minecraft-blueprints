@@ -1,5 +1,5 @@
 {
-  "name": "pixlers",
+  "name": "Pixlers",
   "version": "v0.35.5",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/minigame/pixlers-game/1.0.0/pixlers-game-1.0.0.jar",
