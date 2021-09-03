@@ -1,6 +1,6 @@
 {
   "name": "pixlers",
-  "version": "v0.35.1",
+  "version": "v0.35.2",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/minigame/pixlers-game/1.0.0/pixlers-game-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/minigame/noma-spigot/1.0.0/noma-spigot-1.0.0.jar"

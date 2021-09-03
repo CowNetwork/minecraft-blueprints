@@ -4,3 +4,38 @@ phases:
     voteables:
       - pool: topics
         options: 5
+        votesPerPlayer: 1
+        storeKey: pixlers.voted_topic
+    phaseEndCountdown:
+      duration: 30
+    duration: 60
+    timeoutSilently: true
+  - key: draw
+    kind: network.cow.minigame.pixlers.phase.DrawPhase
+    worldProvider:
+      kind: network.cow.minigame.pixlers.world.DrawPhaseWorldProvider
+    teleport:
+      onStart: true
+    phaseEndCountdown:
+      duration: 0
+    duration: 30
+  - key: rate
+    kind: network.cow.minigame.pixlers.phase.RatePhase
+    teleport:
+      onStart: true
+    worldProvider:
+      kind: network.cow.minigame.pixlers.world.RatePhaseWorldProvider
+  - key: end
+    kind: noma/spigot/phases/EndPhase
+    worldProvider:
+      kind: noma/spigot/worldProviders/CurrentWorld
+    teleport:
+      onStart: false
+    phaseEndCountdown:
+      duration: 30
+    duration: 0hases:
+  - key: lobby
+    kind: noma/spigot/phases/LobbyVotePhase
+    voteables:
+      - pool: topics
+        options: 5
