@@ -1,0 +1,6 @@
+phases:
+  - key: lobby
+    kind: noma/spigot/phases/LobbyVotePhase
+    voteables:
+      - pool: topics
+        options: 5

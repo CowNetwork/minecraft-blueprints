@@ -1,5 +1,0 @@
-defaultRole: player
-assignDefaultRole: true
-service:
-  host: indigo-service.backend.svc.cluster.local
-  port: 9111

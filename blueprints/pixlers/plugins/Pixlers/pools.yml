@@ -1,0 +1,3 @@
+pools:
+  - key: topics
+    kind: network.cow.minigame.pixlers.pool.TopicPool
