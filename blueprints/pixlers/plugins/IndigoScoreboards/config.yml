@@ -1,0 +1,6 @@
+defaultColor: FFFFFF
+teams:
+  - role: cow
+    prefix: "%roleColor%Cow "
+    color: "808080"
+    suffix: ""
