@@ -1,14 +1,13 @@
 {
   "name": "pixlers",
-  "version": "v0.35.7",
+  "version": "v0.35.8",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/minigame/pixlers-game/1.0.0/pixlers-game-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/minigame/noma-spigot/1.0.0/noma-spigot-1.0.0.jar"
   ],
   "maps": [
     { "name": "spawn", "url": "http://cdn.cow.network/maps/pixlers/spawn/rofflev1.tar.gz" },
-    { "name": "pixlers-eval", "url": "http://cdn.cow.network/maps/pixlers/eval/v1.tar.gz" },
-    { "name": "pixlers-cinema", "url": "http://cdn.cow.network/maps/pixlers/cinema/v1.tar.gz" }
+    { "name": "eval-bricks", "url": "http://cdn.cow.network/maps/pixlers/eval/v1.tar.gz" },
+    { "name": "draw-cinema", "url": "http://cdn.cow.network/maps/pixlers/cinema/v1.tar.gz" }
   ]
 }
-

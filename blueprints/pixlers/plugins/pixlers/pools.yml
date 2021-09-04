@@ -1,3 +1,11 @@
 pools:
   - key: topics
     kind: network.cow.minigame.pixlers.pool.TopicPool
+  - key: drawing-world
+    kind: network.cow.minigame.pixlers.pool.WorldPool
+    location: /opt/spigot/plugins/pixlers/maps
+    filter: 'draw-.*'
+  - key: evaluation-world
+    kind: network.cow.minigame.pixlers.pool.WorldPool
+    location: /opt/spigot/plugins/pixlers/maps
+    filter: 'eval-.*'
