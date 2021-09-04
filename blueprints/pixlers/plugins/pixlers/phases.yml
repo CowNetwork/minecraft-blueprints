@@ -6,6 +6,14 @@ phases:
         options: 5
         votesPerPlayer: 1
         storeKey: pixlers.voted_topic
+      - pool: drawing-world
+        options: 5
+        votesPerPlayer: 1
+        storeKey: drawing-world
+      - pool: evaluation-world
+        options: 5
+        votesPerPlayer: 1
+        storeKey: evaluation-world
     phaseEndCountdown:
       duration: 30
     duration: 60
@@ -13,7 +21,8 @@ phases:
   - key: draw
     kind: network.cow.minigame.pixlers.phase.DrawPhase
     worldProvider:
-      kind: network.cow.minigame.pixlers.world.DrawPhaseWorldProvider
+      kind: noma/spigot/worldProviders/StoredWorld
+      storeKey: drawing-world
     teleport:
       onStart: true
     phaseEndCountdown:
@@ -24,7 +33,8 @@ phases:
     teleport:
       onStart: true
     worldProvider:
-      kind: network.cow.minigame.pixlers.world.RatePhaseWorldProvider
+      kind: noma/spigot/worldProviders/StoredWorld
+      storeKey: evaluation-world
   - key: end
     kind: noma/spigot/phases/EndPhase
     worldProvider:
