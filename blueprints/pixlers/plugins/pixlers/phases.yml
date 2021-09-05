@@ -3,14 +3,17 @@ phases:
     kind: noma/spigot/phases/LobbyVotePhase
     voteables:
       - pool: topics
+        name: Topic # TODO: translation
         options: 5
         votesPerPlayer: 1
         storeKey: pixlers.voted_topic
       - pool: drawing-world
+        name: Drawing World # TODO: translation
         options: 5
         votesPerPlayer: 1
         storeKey: drawing-world
       - pool: evaluation-world
+        name: Evaluation World # TODO: translation
         options: 5
         votesPerPlayer: 1
         storeKey: evaluation-world

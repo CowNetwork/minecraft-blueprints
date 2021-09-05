@@ -4,10 +4,8 @@ pools:
   - key: drawing-world
     kind: noma/spigot/pools/WorldPool
     location: /opt/spigot/plugins/pixlers/maps
-    # TODO: draw-.*
-    filter: pixlers-cinema
+    filter: draw-.*
   - key: evaluation-world
     kind: noma/spigot/pools/WorldPool
     location: /opt/spigot/plugins/pixlers/maps
-    # TODO: eval-.*
-    filter: pixlers-eval
+    filter: eval-.*
