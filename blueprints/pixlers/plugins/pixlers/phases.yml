@@ -16,7 +16,7 @@ phases:
         storeKey: evaluation-world
     phaseEndCountdown:
       duration: 30
-    duration: 60
+    duration: 3600
     timeoutSilently: true
   - key: draw
     kind: network.cow.minigame.pixlers.phase.DrawPhase
@@ -27,7 +27,7 @@ phases:
       onStart: true
     phaseEndCountdown:
       duration: 0
-    duration: 30
+    duration: 300
   - key: rate
     kind: network.cow.minigame.pixlers.phase.RatePhase
     teleport:
