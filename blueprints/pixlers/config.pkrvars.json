@@ -1,11 +1,9 @@
 {
   "name": "pixlers",
-  "version": "v0.35.16",
+  "version": "v0.35.17",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/minigame/pixlers-game/1.0.0/pixlers-game-1.0.0.jar",
-    "https://maven.cow.network/releases/network/cow/minigame/noma-spigot/1.0.0/noma-spigot-1.0.0.jar",
-    "https://maven.cow.network/releases/com/comphenix/protocol/ProtocolLib/4.6.0/ProtocolLib-4.6.0.jar",
-    "https://maven.cow.network/releases/network/cow/protocol-wrappers/0.2.0+1.16.5-R0.1-SNAPSHOT/protocol-wrappers-0.2.0+1.16.5-R0.1-20210402.121730-1.jar"
+    "https://maven.cow.network/releases/network/cow/minigame/noma-spigot/1.0.0/noma-spigot-1.0.0.jar"
   ],
   "maps": [
     { "name": "spawn", "url": "http://cdn.cow.network/maps/pixlers/spawn/rofflev1.tar.gz" },
