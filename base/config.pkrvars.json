@@ -1,13 +1,13 @@
 {
   "tuinity-version": "1.16.5-b12d0cce",
-  "version": "v0.27.1",
+  "version": "v0.36.1",
   "name": "spigot-base",
   "plugins": [
     "https://maven.cow.network/releases/network/cow/cloudevents/cloudevents-spigot/1.0.0/cloudevents-spigot-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/grape/grape-spigot/0.3.0/grape-spigot-0.3.0.jar",
     "https://maven.cow.network/releases/network/cow/indigo/indigo-client-spigot/0.6.1/indigo-client-spigot-0.6.1.jar",
     "https://maven.cow.network/releases/network/cow/messages/messages-spigot/1.0.0/messages-spigot-1.0.0.jar",
-    "https://maven.cow.network/releases/network/cow/protocol-wrappers/0.3.0+1.16.5-R0.1-SNAPSHOT/protocol-wrappers-0.3.0+1.16.5-R0.1-20210402.154734-1.jar",
+    "https://maven.cow.network/releases/network/cow/protocol-wrappers/0.3.1+1.16.5-R0.1-SNAPSHOT/protocol-wrappers-0.3.1+1.16.5-R0.1-20210906.085015-1.jar",
     "https://maven.cow.network/releases/network/cow/spigot/spigot-extensions/1.0.0/spigot-extensions-1.0.0.jar",
     "https://maven.cow.network/releases/network/cow/mc/cowboards/0.2.0/cowboards-0.2.0.jar",
     "https://maven.cow.network/releases/network/cow/mc/kotlin-spigot/1.0.0/kotlin-spigot-1.0.0.jar",
