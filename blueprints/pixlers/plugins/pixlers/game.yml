@@ -1,6 +1,6 @@
 game:  
-  minPlayers: 2
-  minActors: 2
+  minPlayers: 1
+  minActors: 1
   maxPlayers: 20
   actorProvider:
     kind: noma/spigot/actorProviders/OneToOne
